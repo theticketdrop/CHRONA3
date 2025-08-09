@@ -1,13 +1,11 @@
 {
   "name": "chrona",
   "private": true,
-  "version": "0.1.0",
-  "type": "module",
+  "version": "0.1.1",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "postinstall": "tailwindcss -i ./app/globals.css -o ./app/globals.css || true"
+    "start": "next start"
   },
   "dependencies": {
     "next": "14.2.5",
