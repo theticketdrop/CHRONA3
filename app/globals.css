@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+
+html, body { height: 100%; }
+
+body {
+  @apply bg-[color:var(--bg,#0a0a0e)] text-foreground antialiased;
+  background: #0a0a0e;
+}
+
+.container {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.card {
+  @apply bg-card border border-[rgba(255,255,255,0.1)] rounded-xl p-6;
+  backdrop-filter: blur(10px);
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-xl border px-4 py-2 font-medium transition;
+  @apply border-[rgba(255,255,255,0.12)] text-white hover:scale-[1.02];
+}
+
+.btn-neon { @apply border-neon/60 hover:shadow-neon; }
+.btn-violet { @apply border-violet/60 hover:shadow-violet; }
+
+.badge {
+  @apply inline-flex items-center gap-2 rounded-full border px-3 py-1 text-sm;
+  @apply border-[rgba(255,255,255,0.12)] text-white/90;
+}
+
+.separator { @apply h-px bg-[rgba(255,255,255,0.08)] my-6; }
+
+.ticker-track { @apply overflow-hidden whitespace-nowrap; }
+.ticker-inner { @apply inline-block animate-ticker; }
